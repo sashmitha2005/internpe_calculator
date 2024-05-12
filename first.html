@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" placeholder="0" name="display" id="display" readonly>
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="clearDisplay()">
+                    <input type="button" value="DEL" onclick="deleteLast()">
+                    <input type="button" value="%" onclick="append('%')">
+                    <input type="button" value="/" onclick="append('/')">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="append('7')">
+                    <input type="button" value="8" onclick="append('8')">
+                    <input type="button" value="9" onclick="append('9')">
+                    <input type="button" value="*" onclick="append('*')">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="append('4')">
+                    <input type="button" value="5" onclick="append('5')">
+                    <input type="button" value="6" onclick="append('6')">
+                    <input type="button" value="-" onclick="append('-')">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="append('1')">
+                    <input type="button" value="2" onclick="append('2')">
+                    <input type="button" value="3" onclick="append('3')">
+                    <input type="button" value="+" onclick="append('+')">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="append('00')">
+                    <input type="button" value="0" onclick="append('0')">
+                    <input type="button" value="." onclick="append('.')">
+                    <input type="button" value="=" onclick="calculate()">
+                </div>
+                <div>
+                    <input type="button" value="Hist"  onclick="showHistory()">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
